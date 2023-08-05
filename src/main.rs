@@ -17,6 +17,8 @@ fn main() {
     // println!("The value of z is: {z}");
     // println!("The value of heart_eyed_cat is: {heart_eyed_cat}");
 
+
+    //This is a tuple
     let tup = (500, 6.4, 1);
 
     let (x, y, z) = tup;
@@ -25,9 +27,22 @@ fn main() {
     println!("The value of x is: {x}");
     println!("The value of z is: {z}");
 
+    //Saying println!({tup.0}) will not work.
     let five_hundred = tup.0;
 
     println!("The value of tup.0 is: {five_hundred}");
+
+    //Elements can be accessed by array[index].
+    let months: [&str; 12] = ["January", "February", "March", "April", "May", "June", "July",
+              "August", "September", "October", "November", "December"];
+              
+    for month in months.iter() {
+        println!("The value of month is: {month}");
+    }
+
+    //Here's an array that contains the number 3 five times for some reason.
+    let array = [3; 5];
+    println!("The value of array is: {:?}", array);
 
 }
 
