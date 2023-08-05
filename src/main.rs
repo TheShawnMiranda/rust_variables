@@ -9,6 +9,25 @@ fn main() {
     let x: u8 = 255;
     println!("The value of x is: {x}");
 
+    // let c = 'z';
+    // let z: char = 'ℤ'; // with explicit type annotation
+    // let heart_eyed_cat = '😻';
+
+    // println!("The value of c is: {c}");
+    // println!("The value of z is: {z}");
+    // println!("The value of heart_eyed_cat is: {heart_eyed_cat}");
+
+    let tup = (500, 6.4, 1);
+
+    let (x, y, z) = tup;
+
+    println!("The value of y is: {y}");
+    println!("The value of x is: {x}");
+    println!("The value of z is: {z}");
+
+    let five_hundred = tup.0;
+
+    println!("The value of tup.0 is: {five_hundred}");
 
 }
 
@@ -38,4 +57,15 @@ fn main() {
 
 /*
     Java's double is Rust's f64. Rust also has f32 which is Java's float.
+*/
+
+/*
+    Boolean type is bool.
+*/
+
+/*
+    Compound types can group multiple values into one type.
+    Rust has two primitive compound types: tuples and arrays (fixed length).
+    Tuples === (,) === Different types. Empty tuples are called unit.
+    Arrays === [,] === Same types.
 */
